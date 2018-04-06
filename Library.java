@@ -1,23 +1,21 @@
 class Library{
 	public static void main (String[] args){
-		final String appName = "Biblioteka v0.2";
+		final String appName = "Biblioteka v0.3" + '\n';
         
-        Book book1 = new Book();
+        Book book1 = new Book("Los jest myśliwym", "Ernest Kellogg Gann", 2011, 493, 
+        	                  "Lotnicza Oficyna Wydawnicza LOW PASS", "9788393424702");
+        Book book2 = new Book("7 nawyków skutecznego działania", "Stephen R. Covey", 2007, 376,
+        	                  "Rebis", "9788373018778");
+        Book book3 = new Book("Algorytmy. Wydanie IV", "Robert Sedgewick, Kevin Wayne",2012, 952,
+        	                  "Helion", "9788324635368");
+        Book book4 = new Book("Drach", "Szczepan Twardoch",2014, 400,
+        	                  "Wydawnictwo Literackie", "9788308054314");
 
-		book1.title = "W pustyni i w puszczy";
-		book1.author = "Henryk Sienkiewicz";
-		book1.releaseDate = 2010;
-		book1.pages = 296;
-		book1.publisher = "Greg";
-		book1.isbn = "9788373271890";
-
-		System.out.println(appName);
+		System.out.print(appName);
 		System.out.println("Ksiżki dostępne w bibliotece: ");
-		System.out.println(book1.title);
-		System.out.println(book1.author);
-		System.out.println(book1.releaseDate);
-		System.out.println(book1.pages);
-		System.out.println(book1.publisher);
-		System.out.println(book1.isbn);
+		book1.printInfo();
+		book2.printInfo();
+		book3.printInfo();
+		book4.printInfo();
 	}
 }
