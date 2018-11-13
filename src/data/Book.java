@@ -75,7 +75,7 @@ public class Book {
 
     public void printInfo() {
         String info = "-------------------- \n" + getTitle() + "; \n" + getAuthor() + "; \n" + getReleaseDate() + "; \n"
-                      + getPages() + "; \n" + getPublisher() + "; \n" + getIsbn() + ";";
+                      + getPages() + "; \n" + getPublisher() + "; \n" + getIsbn() + ";\n";
         System.out.println(info);
     }
 
