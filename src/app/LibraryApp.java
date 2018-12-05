@@ -1,11 +1,10 @@
 package app;
 
-import data.Library;
-
 public class LibraryApp {
+    public static final String APP_NAME = "LibraryApp v0.8";
+
     public static void main(String[] args) {
-        final String appName = "LibraryApp v0.7";
-        System.out.println(appName);
+        System.out.println(APP_NAME);
         LibraryControl libraryControl = new LibraryControl();
         libraryControl.controlLoop();
     }
